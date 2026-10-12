@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тебе открытка 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Фон: прыгающие лягушки -->
+<div class="frogs"></div>
+
+<!-- ЭКРАН 1: Конверт -->
+<div class="envelope-screen" id="envelopeScreen">
+  <div class="envelope">
+    <div class="flap"></div>
+    <div class="letter-icon">💌</div>
+  </div>
+  <h1>У тебя открытка!</h1>
+  <p>Нажми, чтобы открыть</p>
+  <button class="open-btn" id="openBtn">Открыть открытку</button>
+</div>
+
+<!-- ЭКРАН 2: Поздравление -->
+<div class="card-screen" id="cardScreen">
+  <div class="card">
+    <h2 class="title">С ДР!!!!!!!!!!!</h2>
+    <p class="message">
+      Кирчик<br><br>
+      Я тебя очень сильно люблю. Ты, капец, какая уже взрослая, бабулечка считай. Я тебя поздравляю с твоей днюхой, я, сука, к ней готовилась. Я надеюсь день твой пройдёт замечательно и будет насыщен хорошими эмоциями. Ты умница и самый мой дорогой человек.
+    </p>
+    <div class="signature">С любовью твоя Блошка</div>
+  </div>
+  <button class="next-btn-wide" id="toMessageBtn">
+    <span>Дальше</span>
+    <span class="arrow">→</span>
+  </button>
+</div>
+
+<!-- ЭКРАН 3: Текст-воспоминание -->
+<div class="message-screen" id="messageScreen">
+  <div class="message-card">
+    <p class="big-message">
+      Я тебя очень как пиздец люблю, мы столько сделали вместе!!! 
+      Да и не только, ты приняла участие в стольких делах, 
+      ты научилась многому, придумала, нарисовала, написала. 
+      Я хочу напомнить тебе, помнишь ли ты...
+    </p>
+  </div>
+  <button class="next-btn" id="toPhotosBtn">
+    <span>Ещё</span>
+    <span class="arrow">→</span>
+  </button>
+</div>
+
+<!-- ЭКРАН 4: Фото по одному -->
+<div class="photo-screen" id="photoScreen">
+  <div class="photo-card">
+    <div class="photo-frame">
+      <img src="" alt="" class="photo-img" id="photoImg">
+    </div>
+    <p class="photo-caption" id="photoCaption"></p>
+  </div>
+  <button class="next-btn" id="nextBtn">
+    <span id="nextLabel">Ещё</span>
+    <span class="arrow">→</span>
+  </button>
+</div>
+
+<!-- ЭКРАН 5: ФИНАЛ -->
+<div class="final-screen" id="finalScreen">
+  <div class="final-card">
+    <div class="final-photo-wrap">
+      <!-- ⬇⬇⬇ ССЫЛКА НА ФИНАЛЬНОЕ ФОТО ⬇⬇⬇ -->
+      <img src="photos/photo-final.jpg" alt="Я тебя люблю" class="final-photo">
+    </div>
+    <h1 class="final-title">Я тебя люблю</h1>
+    <div class="final-heart">❤️</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
